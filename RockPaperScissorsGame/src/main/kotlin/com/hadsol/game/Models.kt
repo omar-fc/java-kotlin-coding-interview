@@ -9,3 +9,7 @@ enum class Choice {
         SCISSORS -> other == PAPER
     }
 }
+
+enum class Result {
+    WIN, LOSE, DRAW
+}

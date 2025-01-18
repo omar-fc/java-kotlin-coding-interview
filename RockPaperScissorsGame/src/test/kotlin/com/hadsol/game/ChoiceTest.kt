@@ -15,13 +15,31 @@ class ChoiceTest {
     }
 
     @Test
+    fun `rock should not beat paper or rock`() {
+        assertFalse(ROCK.beats(PAPER))
+        assertFalse(ROCK.beats(ROCK))
+    }
+
+    @Test
     fun `scissors should beat paper`() {
         assertTrue(SCISSORS.beats(PAPER))
     }
 
     @Test
+    fun `scissors should not beat rock or scissors`() {
+        assertFalse(SCISSORS.beats(ROCK))
+        assertFalse(SCISSORS.beats(SCISSORS))
+    }
+
+    @Test
     fun `paper should beat rock`() {
         assertTrue(PAPER.beats(ROCK))
+    }
+
+    @Test
+    fun `paper should not beat scissors or paper`() {
+        assertFalse(PAPER.beats(SCISSORS))
+        assertFalse(PAPER.beats(PAPER))
     }
 
 }

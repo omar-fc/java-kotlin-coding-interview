@@ -5,7 +5,7 @@ A simple Rock Paper Scissors game implementation in Kotlin that plays 100 rounds
 ## Prerequisites
 
 - Java JDK 21 or higher
-- Maven 3.6 or higher
+- Maven 3.9.6
 - Docker (optional)
 
 ## Building and Running the Application
@@ -15,11 +15,11 @@ A simple Rock Paper Scissors game implementation in Kotlin that plays 100 rounds
 1. Clone the repository:
 ```bash
 git clone https://github.com/omar-fc/java-kotlin-coding-interview
-cd rock-paper-scissors-game
+cd RockPaperScissorsGame
 ```
 2. Build the application:
 ```bash
-mvn clean package -DskipTests
+./mvnw clean package -DskipTests
 ```
 
 3. Run the application:
@@ -46,7 +46,7 @@ docker run omar077/rock-paper-scissors-game
 1. Clone the repository:
 ```bash
 git clone https://github.com/omar-fc/java-kotlin-coding-interview
-cd rock-paper-scissors-game
+cd RockPaperScissorsGame
 ```
 
 2. Build the Docker image:
@@ -97,7 +97,7 @@ src/
 Run the tests using Maven:
 ```bash
 git clone https://github.com/omar-fc/java-kotlin-coding-interview
-cd RockPaperScissorsGame && mvn test
+cd RockPaperScissorsGame && ./mvnw test
 ```
 
 ## Docker Image Details

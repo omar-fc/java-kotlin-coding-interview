@@ -96,7 +96,8 @@ src/
 
 Run the tests using Maven:
 ```bash
-mvn test
+git clone https://github.com/omar-fc/java-kotlin-coding-interview
+cd RockPaperScissorsGame && mvn test
 ```
 
 ## Docker Image Details
